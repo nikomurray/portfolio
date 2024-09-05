@@ -14,12 +14,12 @@ function Header() {
         <p>{userInfo.description}</p>
       </div>
       <div className="header-buttons">
-        <button className="btn"><span class="material-symbols-outlined">
+        <a href="#" className="btn"><span class="material-symbols-outlined">
 contacts_product
-</span> Contact me</button>
-        <button className="btn"><span class="material-symbols-outlined">
-workspace_premium
-</span> View Projects</button>
+</span> Contact me</a>
+        <a href="#projects" className="btn"><span class="material-symbols-outlined">
+        description
+</span>Download resume</a>
       </div>
     </div>
   );
