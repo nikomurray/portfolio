@@ -1,10 +1,8 @@
-
-
 :root {
-  --grey:#e0e1dd;
-  --dark-blue:#0d1b2a;
-  --blue:#1b263b;
-  --light-blue:#778da9;
+  --grey: #e0e1dd;
+  --dark-blue: #0d1b2a;
+  --blue: #1b263b;
+  --light-blue: #778da9;
 }
 
 
@@ -52,7 +50,7 @@ img {
   font-size: 1rem;
   display: flex;
   align-items: center;
-  gap:4px;
+  gap: 4px;
 }
 
 .btn:hover {
@@ -62,7 +60,7 @@ img {
 
 .header {
   text-align: center;
- padding-top: 10rem;
+  padding-top: 10rem;
 }
 
 .header h1 {
@@ -90,12 +88,12 @@ img {
   padding: 4rem 0;
 }
 
-.projects-title {
+.projects-title,
+.contact-title {
   font-size: 2rem;
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
-  margin-bottom: 2rem;
 }
 
 .projects {
@@ -109,17 +107,58 @@ img {
   border-radius: 8px;
   background: var(--blue);
   padding: 1rem;
-  box-shadow:  0 0 5px var(--light-blue);
+  box-shadow: 0 0 5px var(--light-blue);
 }
+
+.project-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.project-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
 
 .project-title {
   font-size: 2rem;
-  margin-top: 1rem;
 }
 
 .project-image {
   width: 100%;
   height: 250px;
   border-radius: 8px;
-  opacity: 0.6;
+}
+
+
+
+@media screen and (max-width:750px) {
+  html {
+    font-size: 11px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .project-description {
+    text-align: center;
+  }
 }
