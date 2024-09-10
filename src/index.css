@@ -16,7 +16,11 @@
 
 body {
   min-height: 100dvh;
-  background: var(--dark-blue);
+  background: rgb(0,4,25);
+background: -moz-linear-gradient(180deg, rgba(0,4,25,1) 0%, rgba(0,38,125,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,4,25,1) 0%, rgba(0,38,125,1) 100%);
+background: linear-gradient(180deg, rgba(0,4,25,1) 0%, rgba(0,38,125,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000419",endColorstr="#00267d",GradientType=1);
 }
 
 html {
@@ -135,6 +139,16 @@ img {
   border-radius: 8px;
 }
 
+.project-stacks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-stack {
+  color: var(--light-blue);
+  font-weight: 700;
+}
 
 
 @media screen and (max-width:750px) {
@@ -160,5 +174,8 @@ img {
 
   .project-description {
     text-align: center;
+  }
+  .project-stacks {
+   justify-content: center;
   }
 }

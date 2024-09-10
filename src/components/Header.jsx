@@ -6,6 +6,9 @@ function Header() {
       "Creating seamless web experiences with expertise in React, Node.js and PostgreSQL. Driven by clean code, innovative solutions, and scalable applications.",
   };
 
+
+
+
   return (
     <div className="header">
       <div className="header-info">
@@ -17,7 +20,7 @@ function Header() {
         <a href="#" className="btn"><span class="material-symbols-outlined">
 contacts_product
 </span> Contact me</a>
-        <a href="#projects" className="btn"><span class="material-symbols-outlined">
+        <a href="#" className="btn"><span class="material-symbols-outlined">
         description
 </span>Download resume</a>
       </div>
