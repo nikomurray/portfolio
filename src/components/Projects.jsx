@@ -36,8 +36,9 @@ function Projects(props) {
     <>
       <h3 className="projects-title">PROJECTS</h3>
       <div className="projects" id="projects">
-        {projects.map((project) => (
+        {projects.map((project,i) => (
           <Project
+            key={i}
             title={project.title}
             description={project.description}
             image={project.image}

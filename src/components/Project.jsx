@@ -17,8 +17,8 @@ function Project(props) {
       </div>
       <p className="project-description">{props.description}</p>
       <div className="project-stacks">
-        {props.stack.map((stack) => (
-          <p className="project-stack">{stack}</p>
+        {props.stack.map((stack,i) => (
+          <p key={i} className="project-stack">{stack}</p>
         ))}
       </div>
     </div>
