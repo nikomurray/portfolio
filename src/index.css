@@ -150,6 +150,10 @@ img {
   font-weight: 700;
 }
 
+.stack-icon {
+  font-size: 2rem;
+}
+
 
 @media screen and (max-width:750px) {
   html {
@@ -177,5 +181,8 @@ img {
   }
   .project-stacks {
    justify-content: center;
+  }
+  .stack-icon {
+    font-size: 1.6rem;
   }
 }
