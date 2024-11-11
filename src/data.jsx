@@ -14,7 +14,7 @@ export const projects = [
     description:
       "A simple web application where users can add messages to a shared feed. All messages are visible to everyone in real-time, making it a great platform for quick announcements, group chats, or leaving notes. Ideal for small teams or communities looking for a lightweight messaging solution.",
     image: "https://i.postimg.cc/g2MNx20y/messagesapp.jpg",
-    link: "https://lucky-ganache-b3c2c1.netlify.app/",
+    link: "https://minimessaginapp.netlify.app/",
     stack: [
       <FaReact className="stack-icon" />,
       <FaNodeJs className="stack-icon" />,
